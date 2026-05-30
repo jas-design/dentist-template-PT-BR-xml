@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website_config>
+    <branding>
+        <logo>
+            <use_image_logo>false</use_image_logo>
+            <text_main>Dental Care PRO</text_main>
+            <text_sub>Odontologia Especializada</text_sub>
+            <icon>Calendar</icon>
+            <image_url>images/logo.png</image_url>            
+            <image_height>90</image_height>
+        </logo>
+        <colors>
+            <primary>#20A5AE</primary>
+            <secondary>#988127</secondary>
+            <accent_blue>#407BFF</accent_blue>
+            <dark_navy>#1A242F</dark_navy>
+            <light_bg>#F8FAFC</light_bg>
+        </colors>
+        <calendly_url>https://calendly.com/andres-jasperdesign/30min</calendly_url>
+    </branding>
+
+    <contact_info>
+        <phone_main>(+01) 123 456 789</phone_main>
+        <email>info@dentalcare.com</email>
+        <address>24/11 Robert Road, New York, USA</address>
+        <working_hours>Seg a Sáb das 9:00 às 21:00</working_hours>
+        <social_links>
+            <facebook>#</facebook>
+            <instagram>#</instagram>
+            <youtube>#</youtube>
+            <twitter>#</twitter>
+        </social_links>
+    </contact_info>
+
+    <navigation>
+        <link name="Início" path="/"/>
+        <link name="Sobre Nós" path="/about"/>
+        <link name="Serviços" path="/services"/>
+        <link name="Galeria" path="/gallery"/>
+        <link name="Contato" path="/contact"/>
+    </navigation>
+
+    <sections>
+        <hero>
+            <title>Experimente a Excelência Odontológica com um Toque Suave</title>
+            <description>Os pacientes sentem-se mais confiantes quando uma clínica odontológica combina tecnologia moderna com atendimento humanizado e comunicação clara. Nossa equipe foca em tratamentos confortáveis, sorrisos saudáveis e soluções personalizadas para cada membro de sua família.</description>
+            <button_text>Agendar uma Consulta</button_text>
+            <google_rating>5.0</google_rating>
+            <review_count>492 Avaliações</review_count>
+            <image_main>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=1000&amp;h=1000</image_main>
+            <doctor_name></doctor_name>
+            <doctor_role>Dentista</doctor_role>
+            <doctor_avatar>https://i.pravatar.cc/100?u=dent1</doctor_avatar>
+        </hero>
+
+        <info_bar>
+            <contact_text>Precisa de Serviços Odontológicos?</contact_text>
+            <phone>(+01) 987 828 745</phone>
+            <hours_label>Horário de Funcionamento</hours_label>
+            <hours_value>Seg a Sáb das 9:00 às 21:00</hours_value>
+            <button_text>Agendar uma Consulta</button_text>
+        </info_bar>
+
+        <about>
+            <tagline>Sobre Nós</tagline>
+            <title>Sua Jornada para um Sorriso Mais Saudável Começa Aqui</title>
+            <description>O objetivo da nossa clínica é oferecer uma odontologia acolhedora e humanizada, com o mais alto nível de tratamentos gerais, estéticos e avançados. Com prática odontológica reconhecida e de alta qualidade.</description>
+            <years_experience>15+</years_experience>
+            <images>
+                <image>https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=800</image>
+                <image>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400</image>
+                <image>https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400</image>
+            </images>
+            <features>
+                <feature>Equipe Experiente</feature>
+                <feature>Serviços Abrangentes</feature>
+                <feature>Tecnologia de Ponta</feature>
+                <feature>Atendimento de Emergência</feature>
+            </features>
+            <button_text>Saiba Mais Sobre Nós</button_text>
+        </about>
+
+        <services>
+            <tagline>Nossos Serviços</tagline>
+            <title>Serviços de Alta Qualidade para Você</title>
+            <description>Estamos comprometidos com a sustentabilidade e iniciativas ecológicas.</description>
+            <bottom_description>Acreditamos no uso da tecnologia e técnicas mais recentes para garantir os melhores resultados para nossos pacientes.</bottom_description>
+            <button_text>Ver Todos os Serviços</button_text>
+            <items>
+                <service id="general-dental-care" icon="Stethoscope">
+                    <title>Clínica Geral</title>
+                    <description>Estamos entusiasmados em conhecê-lo e oferecer o melhor cuidado odontológico para sua família.</description>
+                </service>
+                <service id="dental-implants" icon="Activity">
+                    <title>Implantes Dentários</title>
+                    <description>Nossa equipe adora curiosidades. Sabia que o esmalte dentário é a substância mais resistente do corpo humano?</description>
+                </service>
+                <service id="cosmetic-dentistry" icon="Smile">
+                    <title>Odontologia Estética</title>
+                    <description>Oferecemos tratamentos estéticos modernos para valorizar a beleza natural do seu sorriso.</description>
+                </service>
+                <service id="teeth-whitening" icon="Sparkles">
+                    <title>Clareamento Dental</title>
+                    <description>Recupere o brilho do seu sorriso com técnicas seguras e eficazes de clareamento.</description>
+                </service>
+            </items>
+        </services>
+
+        <video_promo>
+            <tagline>Visite a Clínica</tagline>
+            <title>Cuidado Odontológico Completo para Todas as Idades</title>
+            <button_text>Reproduzir Vídeo</button_text>
+            <video_url>https://www.youtube.com/embed/whWPO1Ms_zU?si=e9dXJ5jY4lEyQuRA</video_url>
+            <thumbnail>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=1600&amp;h=800</thumbnail>
+        </video_promo>
+
+        <diagnosis>
+            <tagline>POR QUE NOS ESCOLHER</tagline>
+            <title>Diagnóstico de Doenças Bucais</title>
+            <description>Estamos comprometidos com a sustentabilidade e práticas ecológicas em nosso dia a dia.</description>
+            <tooth_image>images/tooth.webp</tooth_image>
+            <features>
+                <feature icon="Users" title="Médicos Experientes" description="O objetivo da nossa clínica é fornecer um atendimento odontológico amigável e cuidadoso."/>
+                <feature icon="Heart" title="Atendimento Personalizado" description="O objetivo da nossa clínica é fornecer um atendimento odontológico amigável e cuidadoso."/>
+                <feature icon="CreditCard" title="Formas Flexíveis de Pagamento" description="O objetivo da nossa clínica é fornecer um atendimento odontológico amigável e cuidadoso."/>
+                <feature icon="Clock" title="Serviços de Emergência" description="O objetivo da nossa clínica é fornecer um atendimento odontológico amigável e cuidadoso."/>
+                <feature icon="Star" title="Avaliações Positivas" description="O objetivo da nossa clínica é fornecer um atendimento odontológico amigável e cuidadoso."/>
+                <feature icon="Cpu" title="Tecnologia de Ponta" description="O objetivo da nossa clínica é fornecer um atendimento odontológico amigável e cuidadoso."/>
+            </features>
+        </diagnosis>
+
+        <stats>
+            <stat label="Convênios Atendidos" value="75+" description="Nossa equipe adora curiosidades. Sabia que o esmalte dentário é extremamente resistente?"/>
+            <stat label="Procedimentos Realizados" value="2K" description="Nossa equipe adora curiosidades. Sabia que o esmalte dentário é extremamente resistente?"/>
+            <stat label="Clientes Satisfeitos" value="22K" description="Nossa equipe adora curiosidades. Sabia que o esmalte dentário é extremamente resistente?"/>
+            <stat label="Dentistas Especialistas" value="18+" description="Nossa equipe adora curiosidades. Sabia que o esmalte dentário é extremamente resistente?"/>
+        </stats>
+
+        <before_after>
+            <tagline>Antes e depois do clareamento dental</tagline>
+            <title>Conquiste um Sorriso de Estrela Hoje Mesmo!</title>
+            <description_main>O clareamento dental profissional remove manchas profundas e devolve a cor natural dos seus dentes de forma segura, rápida e com supervisão profissional.</description_main>
+            <description_sub>Um procedimento rápido, seguro e altamente eficaz para transformar a estética do seu sorriso de maneira surpreendente.</description_sub>
+            <doctor_name>Dr. John Boss</doctor_name>
+            <image_before>images/teeth_before.jpg</image_before>
+            <image_after>images/teeth_after.jpg</image_after>
+        </before_after>
+
+        <process_accordion>
+            <tagline>Como Funciona</tagline>
+            <title>O Que Fazemos pelo Seu Sorriso</title>
+            <description>Estamos comprometidos com a sustentabilidade. Nossa clínica adota práticas ecológicas, como prontuários digitais para redução de papel e equipamentos de alta eficiência energética.</description>
+            <image>https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=1000</image>
+            <items>
+                <item icon="Calendar" title="Agende uma Consulta" content="Agende facilmente seu horário pelo site ou telefone de forma rápida e conveniente."/>
+                <item icon="Heart" title="Diagnóstico e Planejamento" content="Realizamos uma avaliação completa e detalhada para definir o melhor plano de tratamento para você."/>
+                <item icon="Star" title="Atendimento Especializado" content="Nossos dentistas especialistas utilizam técnicas modernas para garantir tratamentos indolores e eficientes."/>
+            </items>
+        </process_accordion>
+
+        <team>
+            <tagline>Nossa Equipe</tagline>
+            <title>Nossos Dentistas Especializados</title>
+            <description>Profissionais altamente qualificados prontos para cuidar da sua saúde bucal.</description>
+            <members>
+                <member id="1" name="Dr. Johan Joe" specialty="Dentista Chefe" experience="15+" patients="2k+" image="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+                <member id="2" name="Dr. Alice Johnson" specialty="Dentista Sênior" experience="12+" patients="1.5k+" image="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+                <member id="3" name="Dr. Alison Banson" specialty="Ortodontista" experience="10+" patients="1.2k+" image="https://images.unsplash.com/photo-1659353888906-adb3e0041693?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+                <member id="4" name="Dr. Christopher Case" specialty="Periodontista" experience="18+" patients="3k+" image="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=400"/>
+            </members>
+        </team>
+
+        <testimonials>
+            <tagline>Depoimentos</tagline>
+            <title>O Que Dizem Nossos Pacientes.</title>
+            <rating>4.7/5</rating>
+            <rating_desc>Avaliação média dos pacientes após as consultas</rating_desc>
+            <image_main>https://images.unsplash.com/photo-1681939282781-341ac4f61996?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=1000</image_main>
+            <items>
+                <testimonial id="1" name="Robert Lee" role="Engenheiro de Software" rating="4.7" avatar="https://i.pravatar.cc/100?u=robert">
+                    <content>Gostaria de agradecer ao Dr. Steve! O atendimento foi maravilhoso. Muito obrigado por me ajudar a superar o medo de ir ao dentista! Recomendo muito.</content>
+                </testimonial>
+                <testimonial id="2" name="Sarah Jenkins" role="Diretora de Marketing" rating="5.0" avatar="https://i.pravatar.cc/100?u=sarah">
+                    <content>A melhor experiência odontológica que já tive. A equipe foi incrivelmente profissional e o tratamento foi totalmente indolor. Recomendo muito para quem procura atendimento de qualidade.</content>
+                </testimonial>
+                <testimonial id="3" name="Michael Chen" role="Estudante de Arquitetura" rating="4.9" avatar="https://i.pravatar.cc/100?u=michael">
+                    <content>Instalações modernas e um ambiente acolhedor. O Dr. Lee explicou tudo muito claramente e me deixou super tranquilo durante todo o canal.</content>
+                </testimonial>
+            </items>
+        </testimonials>
+
+        <blog>
+            <tagline>Últimas Notícias</tagline>
+            <title>Nosso Blog de Saúde Bucal.</title>
+            <description>Dicas e informações valiosas para manter o seu sorriso sempre saudável.</description>
+            <items>
+                <post id="1" category="Dicas Odontológicas" date="March 15, 2024" image="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                    <title>A Importância das Consultas Odontológicas Regulares</title>
+                    <excerpt>Entenda por que as consultas periódicas de prevenção são essenciais para a sua saúde.</excerpt>
+                </post>
+                <post id="2" category="Clareamento" date="March 10, 2024" image="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                    <title>Os 5 Principais Benefícios do Clareamento Dental Profissional</title>
+                    <excerpt>Descubra como o clareamento profissional pode aumentar sua autoestima de forma segura.</excerpt>
+                </post>
+                <post id="3" category="Implantes" date="March 05, 2024" image="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                    <title>Entendendo os Implantes Dentários: O Que Você Precisa Saber</title>
+                    <excerpt>Tire suas dúvidas sobre o procedimento que reconstrói dentes e devolve a segurança para sorrir.</excerpt>
+                </post>
+            </items>
+        </blog>
+
+        <faq>
+            <tagline>Dúvidas Frequentes</tagline>
+            <title>Perguntas Frequentes</title>
+            <image>https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=800</image>
+            <items>
+                <item q="Vocês aceitam planos de saúde/convênios?" a="Sim, aceitamos os principais convênios odontológicos. Nossa equipe pode ajudar você a verificar sua cobertura e aproveitar ao máximo seus benefícios desde a primeira consulta."/>
+                <item q="O tratamento odontológico dói?" a="Priorizamos o conforto do paciente acima de tudo. Utilizamos anestésicos modernos e técnicas suaves para garantir que seu tratamento seja o mais confortável e indolor possível."/>
+                <item q="Vocês oferecem atendimento de emergência?" a="Com certeza. Oferecemos horários de emergência no mesmo dia para casos de trauma, dores intensas ou qualquer outra urgência odontológica."/>
+                <item q="Com que frequência devo ir ao dentista?" a="Para a maioria dos pacientes, recomendamos uma limpeza profissional e avaliação a cada seis meses para manter a saúde bucal em dia e prevenir problemas."/>
+            </items>
+        </faq>
+
+        <cta_banner>
+            <title>Estamos Aceitando Novos Pacientes</title>
+            <highlight>Novos Pacientes</highlight>
+            <description>Não espere a dor de dente começar. Agende sua avaliação completa e experimente uma odontologia moderna e acolhedora.</description>
+            <button_text>Agendar Consulta</button_text>
+            <phone_label>Telefone de Emergência</phone_label>
+            <image>https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=500</image>
+        </cta_banner>
+
+        <footer>
+            <description>Oferecemos o mais alto nível de tratamentos odontológicos gerais, estéticos e especializados. O seu conforto é a nossa prioridade.</description>
+            <copyright>Copyright © 2026 Dental Care Clinic. Todos os direitos reservados.</copyright>
+        </footer>
+    </sections>
+
+    <pages>
+        <about_us>
+            <header_title>Sobre Nós</header_title>
+            <mission>
+                <title>Nossa Missão</title>
+                <description>Oferecer cuidados odontológicos de excelência mundial com um toque humano e personalizado, garantindo que cada paciente saia com um sorriso confiante.</description>
+            </mission>
+            <certifications>
+                <title>Certificações</title>
+                <description>Nossa clínica é certificada pelas principais associações odontológicas mundiais, garantindo os mais altos padrões de segurança e tratamento.</description>
+            </certifications>
+            <story>
+                <title>Nossa História</title>
+                <description>Fundada em 2010, crescemos de um pequeno consultório familiar para uma das clínicas odontológicas multidisciplinares mais confiáveis da região.</description>
+            </story>
+        </about_us>
+
+        <gallery>
+            <header_title>Galeria</header_title>
+            <transformations_title>Transformações de Pacientes</transformations_title>
+            <items>
+                <image title="Equipamentos Modernos">https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Interior da Clínica">https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Sala de Consulta">https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Nossos Dentistas">https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Sucesso do Tratamento">https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Laboratório Odontológico">https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Atendimento ao Paciente">https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+                <image title="Tecnologia Avançada">https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&amp;fit=crop&amp;q=80&amp;w=800&amp;h=600</image>
+            </items>
+            <transformations>
+                <case title="Caso de Sucesso Estético nº 1">
+                    <before>https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</before>
+                    <after>https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</after>
+                </case>
+                <case title="Caso de Sucesso Estético nº 2">
+                    <before>https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</before>
+                    <after>https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=300</after>
+                </case>
+            </transformations>
+        </gallery>
+
+        <services>
+            <header_title>Nossos Serviços</header_title>
+        </services>
+
+        <contact>
+            <header_title>Fale Conosco</header_title>
+        </contact>
+    </pages>
+</website_config>
