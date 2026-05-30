@@ -8,7 +8,8 @@ const ContactSection = () => {
 
   if (loading || !config) return null;
 
-  const { contactInfo } = config;
+  const { contactInfo, sections } = config;
+  const contactSection = sections.contact || {};
 
   const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(contactInfo.address)}&t=&z=${zoom}&ie=UTF8&iwloc=&output=embed`;
 
@@ -47,9 +48,11 @@ const ContactSection = () => {
 
           {/* Info & Form Column */}
           <div className="p-2">
-            <h5 className="text-primary font-bold tracking-widest uppercase mb-4">Contact Now</h5>
+            <h5 className="text-primary font-bold tracking-widest uppercase mb-4">
+              {contactSection.tagline || 'Fale Conosco'}
+            </h5>
             <h2 className="section-title mb-8">
-              Get Free <span className="text-primary">Professional Consultation</span>
+              {contactSection.title || 'Receba uma'} <span className="text-primary">{contactSection.titleHighlight || 'Consulta Profissional Gratuita'}</span>
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-8 mb-12">
@@ -58,7 +61,9 @@ const ContactSection = () => {
                   <MapPin size={24} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">Clinic Address</h4>
+                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">
+                    {contactSection.addressLabel || 'Endereço da Clínica'}
+                  </h4>
                   <p className="text-slate-500 text-sm font-medium">{contactInfo.address}</p>
                 </div>
               </div>
@@ -67,7 +72,9 @@ const ContactSection = () => {
                   <Phone size={24} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">Make A Call</h4>
+                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">
+                    {contactSection.phoneLabel || 'Ligue para Nós'}
+                  </h4>
                   <p className="text-slate-500 text-sm font-medium">{contactInfo.phoneMain}</p>
                 </div>
               </div>
@@ -76,7 +83,9 @@ const ContactSection = () => {
                   <Mail size={24} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">Email Address</h4>
+                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">
+                    {contactSection.emailLabel || 'E-mail'}
+                  </h4>
                   <p className="text-slate-500 text-sm font-medium">{contactInfo.email}</p>
                 </div>
               </div>
@@ -85,7 +94,9 @@ const ContactSection = () => {
                   <Clock size={24} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">Working Hours</h4>
+                  <h4 className="text-sm font-black text-dark-navy uppercase tracking-widest mb-1">
+                    {contactSection.hoursLabel || 'Horário de Funcionamento'}
+                  </h4>
                   <p className="text-slate-500 text-sm font-medium">{contactInfo.workingHours}</p>
                 </div>
               </div>
@@ -93,13 +104,13 @@ const ContactSection = () => {
 
             <form className="space-y-4 bg-white p-8 rounded-[2rem] shadow-xl border border-slate-50">
               <div className="grid grid-cols-2 gap-4">
-                <input type="text" placeholder="Your Name" className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
-                <input type="email" placeholder="Your Email" className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
+                <input type="text" placeholder={contactSection.placeholderName || 'Seu Nome'} className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
+                <input type="email" placeholder={contactSection.placeholderEmail || 'Seu E-mail'} className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
               </div>
-              <input type="text" placeholder="Subject" className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
-              <textarea placeholder="Your Message" rows={4} className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
+              <input type="text" placeholder={contactSection.placeholderSubject || 'Assunto'} className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
+              <textarea placeholder={contactSection.placeholderMessage || 'Sua Mensagem'} rows={4} className="p-4 bg-light-bg border border-slate-50 rounded-xl w-full focus:ring-2 focus:ring-primary/20 outline-none font-medium text-sm" />
               <button className="btn-primary w-full py-4 text-sm font-black uppercase tracking-widest shadow-lg shadow-primary/20 cursor-pointer">
-                Send Message <Send size={20} />
+                {contactSection.buttonText || 'Enviar Mensagem'} <Send size={20} />
               </button>
             </form>
           </div>

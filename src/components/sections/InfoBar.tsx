@@ -8,7 +8,8 @@ const InfoBar = () => {
 
   if (loading || !config) return null;
 
-  const { contactInfo } = config;
+  const { contactInfo, sections } = config;
+  const infoBar = sections.infoBar;
 
   return (
     <div className="bg-dark-navy py-6 relative z-30">
@@ -19,8 +20,8 @@ const InfoBar = () => {
               <Phone size={24} />
             </div>
             <div>
-              <p className="text-white text-base font-bold">Need Dental Services?</p>
-              <p className="text-white/60 text-sm">Call on : {contactInfo.phoneMain}</p>
+              <p className="text-white text-base font-bold">{infoBar.contactText || 'Need Dental Services?'}</p>
+              <p className="text-white/60 text-sm">{infoBar.callLabel || 'Call on :'} {contactInfo.phoneMain}</p>
             </div>
           </div>
 
@@ -29,8 +30,8 @@ const InfoBar = () => {
               <Clock size={24} />
             </div>
             <div>
-              <p className="text-white text-base font-bold">Opening Hours</p>
-              <p className="text-white/60 text-sm">{contactInfo.workingHours}</p>
+              <p className="text-white text-base font-bold">{infoBar.hoursLabel || 'Opening Hours'}</p>
+              <p className="text-white/60 text-sm">{infoBar.hoursValue || contactInfo.workingHours}</p>
             </div>
           </div>
 
@@ -38,7 +39,7 @@ const InfoBar = () => {
             onClick={openCalendly}
             className="px-8 py-3 bg-primary text-white rounded-full font-bold text-sm tracking-tight hover:brightness-110 transition-all flex items-center gap-2 shadow-lg shadow-primary/20 cursor-pointer"
           >
-            Make An Appointment <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center"><Calendar size={14} /></div>
+            {infoBar.buttonText || 'Make An Appointment'} <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center"><Calendar size={14} /></div>
           </button>
         </div>
       </div>

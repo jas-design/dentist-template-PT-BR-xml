@@ -60,7 +60,7 @@ const Blog = () => {
                   {post.excerpt}
                 </p>
                 <button className="flex items-center gap-2 text-dark-navy font-black uppercase tracking-widest text-xs group/btn cursor-pointer">
-                  Read Article <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover/btn:bg-primary group-hover/btn:text-white transition-all"><ArrowRight size={14} /></div>
+                  {section.readMoreText || 'Read Article'} <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover/btn:bg-primary group-hover/btn:text-white transition-all"><ArrowRight size={14} /></div>
                 </button>
               </div>
             </motion.div>

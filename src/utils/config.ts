@@ -20,6 +20,8 @@ export interface WebsiteConfig {
       lightBg: string;
     };
     calendlyUrl: string;
+    bookAppointmentText: string;
+    needHelpText: string;
   };
   contactInfo: {
     phoneMain: string;
@@ -112,6 +114,8 @@ export async function fetchWebsiteConfig(): Promise<WebsiteConfig> {
         logo: parseNode(brandingNode.getElementsByTagName('logo')[0]),
         colors: parseNode(brandingNode.getElementsByTagName('colors')[0]),
         calendlyUrl: getTagText(brandingNode, 'calendly_url'),
+        bookAppointmentText: getTagText(brandingNode, 'book_appointment_text'),
+        needHelpText: getTagText(brandingNode, 'need_help_text'),
       },
       contactInfo: {
         phoneMain: getTagText(contactInfoNode, 'phone_main'),

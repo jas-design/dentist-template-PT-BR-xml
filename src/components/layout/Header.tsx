@@ -96,7 +96,7 @@ const Header = () => {
             onClick={openCalendly}
             className="px-6 py-3 bg-primary text-white rounded-full font-bold text-sm tracking-tight hover:brightness-110 transition-all flex items-center gap-2 shadow-lg shadow-primary/20 cursor-pointer"
           >
-            Book Appointment <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center"><Calendar size={14} /></div>
+            {branding.bookAppointmentText || 'Book Appointment'} <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center"><Calendar size={14} /></div>
           </button>
         </nav>
 
@@ -145,10 +145,10 @@ const Header = () => {
                   onClick={() => { setIsOpen(false); openCalendly(); }}
                   className="px-6 py-4 bg-primary text-white rounded-xl font-black uppercase tracking-widest text-xs shadow-lg shadow-primary/20 flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  Book Appointment <Calendar size={18} />
+                  {branding.bookAppointmentText || 'Book Appointment'} <Calendar size={18} />
                 </button>
                 <div className="mt-8 pt-8 border-t border-slate-100">
-                  <p className="text-slate-500 mb-2">Need Help?</p>
+                  <p className="text-slate-500 mb-2">{branding.needHelpText || 'Need Help?'}</p>
                   <a href={`tel:${contactInfo.phoneMain}`} className="text-xl font-bold text-primary flex items-center gap-2">
                     <Phone size={20} /> {contactInfo.phoneMain}
                   </a>

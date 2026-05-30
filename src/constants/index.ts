@@ -1,9 +1,9 @@
-import { 
-  Stethoscope, 
-  Dna, 
-  CircleOff, 
-  Smile, 
-  Sparkles, 
+import {
+  Stethoscope,
+  Dna,
+  CircleOff,
+  Smile,
+  Sparkles,
   Microscope,
   ShieldCheck,
   Star,
@@ -120,7 +120,7 @@ export const BLOG_POSTS = [
   {
     id: '3',
     title: 'Understanding Dental Implants: What You Need To Know',
-    date: 'March 05, 2024',
+    date: 'Março 05, 2024',
     excerpt: 'Our clinic donates dental care services to underprivileged families.',
     image: 'https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=600&h=400',
     category: 'Implants'

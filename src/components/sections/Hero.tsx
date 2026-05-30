@@ -13,14 +13,14 @@ const Hero = () => {
   const logoHeight = parseInt(config.branding.logo.imageHeight || '90');
   const useImage = config.branding.logo.useImageLogo === 'true';
   const desktopLogoHeight = useImage ? logoHeight : 65;
-  
+
   const heroStyle = {
     '--hero-pt': '128px',
     '--hero-pt-lg': `${desktopLogoHeight + 80}px`
   } as React.CSSProperties;
 
   return (
-    <section 
+    <section
       style={heroStyle}
       className="relative pt-[var(--hero-pt)] lg:pt-[var(--hero-pt-lg)] pb-20 overflow-hidden bg-linear-to-b from-primary/5 to-white"
     >
@@ -45,13 +45,13 @@ const Hero = () => {
             <h1 className="text-5xl lg:text-[5.5rem] font-display font-black leading-[1] text-dark-navy mb-8 tracking-tight">
               {section.title}
             </h1>
-            
+
             <p className="text-lg text-slate-500 mb-10 max-w-xl leading-relaxed">
               {section.description}
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">
-              <button 
+              <button
                 onClick={openCalendly}
                 className="px-8 py-5 bg-primary text-white rounded-full font-bold text-sm tracking-widest uppercase hover:brightness-110 transition-all flex items-center gap-3 shadow-2xl shadow-primary/30 cursor-pointer"
               >
@@ -66,7 +66,7 @@ const Hero = () => {
                   <Star key={i} size={14} fill="currentColor" />
                 ))}
               </div>
-              <p className="border-l border-slate-200 pl-4 text-slate-400 text-sm font-bold uppercase tracking-widest">Based On {section.reviewCount}</p>
+              <p className="border-l border-slate-200 pl-4 text-slate-400 text-sm font-bold uppercase tracking-widest">{section.reviewCount}</p>
             </div>
           </motion.div>
 
@@ -89,7 +89,7 @@ const Hero = () => {
 
               {/* Floating Dentist Info Card */}
               {section.doctorName && section.doctorAvatar && (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 1 }}
@@ -109,7 +109,7 @@ const Hero = () => {
                   <path d="M7 3C4.23858 3 2 5.23858 2 8V10C2 12.7614 4.23858 15 7 15H8V18C8 19.6569 9.34315 21 11 21H13C14.6569 21 16 19.6569 16 18V15H17C19.7614 15 22 12.7614 22 10V8C22 5.23858 19.7614 3 17 3H7Z" />
                 </svg>
               </div>
-              
+
               <div className="absolute bottom-1/4 -right-4 w-12 h-12 bg-white/40 backdrop-blur-sm rounded-xl flex items-center justify-center text-primary border border-white/50 shadow-lg animate-bounce">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M12 2L2 7L12 12L22 7L12 2Z" />

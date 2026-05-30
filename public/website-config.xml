@@ -17,6 +17,8 @@
             <light_bg>#F8FAFC</light_bg>
         </colors>
         <calendly_url>https://calendly.com/andres-jasperdesign/30min</calendly_url>
+        <book_appointment_text>Agendar Consulta</book_appointment_text>
+        <need_help_text>Precisa de ajuda?</need_help_text>
     </branding>
 
     <contact_info>
@@ -42,7 +44,7 @@
 
     <sections>
         <hero>
-            <title>Experimente a Excelência Odontológica com um Toque Suave</title>
+            <title>Experimente a Excelência Odontológica</title>
             <description>Os pacientes sentem-se mais confiantes quando uma clínica odontológica combina tecnologia moderna com atendimento humanizado e comunicação clara. Nossa equipe foca em tratamentos confortáveis, sorrisos saudáveis e soluções personalizadas para cada membro de sua família.</description>
             <button_text>Agendar uma Consulta</button_text>
             <google_rating>5.0</google_rating>
@@ -56,6 +58,7 @@
         <info_bar>
             <contact_text>Precisa de Serviços Odontológicos?</contact_text>
             <phone>(+01) 987 828 745</phone>
+            <call_label>Ligue para:</call_label>
             <hours_label>Horário de Funcionamento</hours_label>
             <hours_value>Seg a Sáb das 9:00 às 21:00</hours_value>
             <button_text>Agendar uma Consulta</button_text>
@@ -193,16 +196,17 @@
             <tagline>Últimas Notícias</tagline>
             <title>Nosso Blog de Saúde Bucal.</title>
             <description>Dicas e informações valiosas para manter o seu sorriso sempre saudável.</description>
+            <read_more_text>Ler Artigo</read_more_text>
             <items>
-                <post id="1" category="Dicas Odontológicas" date="March 15, 2024" image="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                <post id="1" category="Dicas Odontológicas" date="Março 15, 2024" image="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
                     <title>A Importância das Consultas Odontológicas Regulares</title>
                     <excerpt>Entenda por que as consultas periódicas de prevenção são essenciais para a sua saúde.</excerpt>
                 </post>
-                <post id="2" category="Clareamento" date="March 10, 2024" image="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                <post id="2" category="Clareamento" date="Março 10, 2024" image="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
                     <title>Os 5 Principais Benefícios do Clareamento Dental Profissional</title>
                     <excerpt>Descubra como o clareamento profissional pode aumentar sua autoestima de forma segura.</excerpt>
                 </post>
-                <post id="3" category="Implantes" date="March 05, 2024" image="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
+                <post id="3" category="Implantes" date="Março 05, 2024" image="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;q=80&amp;w=600&amp;h=400">
                     <title>Entendendo os Implantes Dentários: O Que Você Precisa Saber</title>
                     <excerpt>Tire suas dúvidas sobre o procedimento que reconstrói dentes e devolve a segurança para sorrir.</excerpt>
                 </post>
@@ -230,9 +234,30 @@
             <image>https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;q=80&amp;w=400&amp;h=500</image>
         </cta_banner>
 
+        <contact>
+            <tagline>Fale Conosco</tagline>
+            <title>Receba uma</title>
+            <title_highlight>Consulta Profissional Gratuita</title_highlight>
+            <address_label>Endereço da Clínica</address_label>
+            <phone_label>Ligue para Nós</phone_label>
+            <email_label>E-mail</email_label>
+            <hours_label>Horário de Funcionamento</hours_label>
+            <placeholder_name>Seu Nome</placeholder_name>
+            <placeholder_email>Seu E-mail</placeholder_email>
+            <placeholder_subject>Assunto</placeholder_subject>
+            <placeholder_message>Sua Mensagem</placeholder_message>
+            <button_text>Enviar Mensagem</button_text>
+        </contact>
+
         <footer>
             <description>Oferecemos o mais alto nível de tratamentos odontológicos gerais, estéticos e especializados. O seu conforto é a nossa prioridade.</description>
             <copyright>Copyright © 2026 Dental Care Clinic. Todos os direitos reservados.</copyright>
+            <services_title>Serviços</services_title>
+            <information_title>Informações</information_title>
+            <contact_title>Contato</contact_title>
+            <terms_text>Termos de Uso</terms_text>
+            <privacy_text>Política de Privacidade</privacy_text>
+            <admin_text>Admin</admin_text>
         </footer>
     </sections>
 

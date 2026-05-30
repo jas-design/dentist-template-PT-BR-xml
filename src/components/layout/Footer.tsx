@@ -71,7 +71,9 @@ const Footer = () => {
 
           {/* Col 2 */}
           <div>
-            <h4 className="text-lg font-black mb-8 text-white">Services</h4>
+            <h4 className="text-lg font-black mb-8 text-white">
+              {sections.footer.servicesTitle || 'Serviços'}
+            </h4>
             <ul className="space-y-4">
               {(sections.services.items || []).map((item: any, idx: number) => (
                 <li key={idx}>
@@ -85,7 +87,9 @@ const Footer = () => {
 
           {/* Col 3 */}
           <div>
-            <h4 className="text-lg font-black mb-8 text-white">Information</h4>
+            <h4 className="text-lg font-black mb-8 text-white">
+              {sections.footer.informationTitle || 'Informações'}
+            </h4>
             <ul className="space-y-4">
               {(navigation || []).map((item: any, idx: number) => (
                 <li key={idx}>
@@ -99,7 +103,9 @@ const Footer = () => {
 
           {/* Col 4 */}
           <div>
-            <h4 className="text-lg font-black mb-8 text-white">Quick Contact</h4>
+            <h4 className="text-lg font-black mb-8 text-white">
+              {sections.footer.contactTitle || 'Contato Rápido'}
+            </h4>
             <ul className="space-y-6">
               <li className="flex gap-4 text-white/60 text-sm">
                 <MapPin size={20} className="text-primary shrink-0" />
@@ -120,9 +126,15 @@ const Footer = () => {
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-500 font-bold uppercase text-xs tracking-widest">{sections.footer.copyright}</p>
           <div className="flex gap-8 text-slate-500 font-bold uppercase text-xs tracking-widest">
-            <a href="#" className="hover:text-primary transition-all">Terms of Use</a>
-            <a href="#" className="hover:text-primary transition-all">Privacy Policy</a>
-            <Link to="/admin" className="hover:text-primary transition-all">Admin</Link>
+            <a href="#" className="hover:text-primary transition-all">
+              {sections.footer.termsText || 'Termos de Uso'}
+            </a>
+            <a href="#" className="hover:text-primary transition-all">
+              {sections.footer.privacyText || 'Política de Privacidade'}
+            </a>
+            <Link to="/admin" className="hover:text-primary transition-all">
+              {sections.footer.adminText || 'Admin'}
+            </Link>
           </div>
         </div>
       </div>
